@@ -1,4 +1,4 @@
-# sloth-ci.ext.build_email_notifications
+# Email Notifications for Sloth CI Builds
 
 Send email notifications when builds complete or fail.
 
@@ -9,15 +9,15 @@ This extension sends you emails via SMTP when your builds complete (fully or par
 
 ## Installation
 
-    $ pip install sloth-ci.ext.build_email_notifications
+    $ pip install sloth-ci-ext-notifications
 
 
 ## Usage
 
     extensions:
         notifications:
-            # Use the module sloth_ci.ext.build_email_notifications.
-            module: build_email_notifications
+            # Use the module sloth_ci_ext_notifications.
+            module: notifications
 
             # Emails to send the notifications to.
             emails:
@@ -67,3 +67,4 @@ This extension sends you emails via SMTP when your builds complete (fully or par
             # secure:
             #    -   keyfile
             #    -   cerfile
+
